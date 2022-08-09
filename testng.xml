@@ -6,5 +6,10 @@
         <packages>
             <package name="ShoeStore"></package>
         </packages>
+
+        <classes>
+            <class name="Tests.LandingPageTests"/>
+            <class name="Tests.MonthsPageTests"/>
+        </classes>
     </test>
 </suite>
