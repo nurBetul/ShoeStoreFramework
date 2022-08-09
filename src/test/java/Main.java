@@ -5,6 +5,6 @@ public class Main {
     public static void main(String[] args) {
         WebDriver driver = Driver.getDriver();
 
-        driver.get("http://www.google.com/");
+        driver.get("https://rb-shoe-store.herokuapp.com/");
     }
 }

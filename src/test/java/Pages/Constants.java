@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class Constants {
 
 
-    protected By homeLabel = By.className("navbar-brand");
+    protected By homeLabel = By.cssSelector("a[class= 'navbar-brand']");
     protected By topRedBar = By.id("header_nav");
     protected By listOfMonths = By.cssSelector("ul>li"); //12 months + All Shoes
     protected By remindMeNEwShoes = By.xpath("//label[text() = 'Remind me of new shoes']");
@@ -21,5 +21,14 @@ public class Constants {
     protected By selectList = By.id("brand");
     protected By searchButton = By.id("search_button");
     protected By emailSubmitMessage = By.id("flash");
-
+    protected By promoCodeWarning = By.cssSelector("div[id='flash']");
+    protected By acornsShoesPage = By.cssSelector("div[class='title'");
+    protected By january = By.xpath("//a[text() = 'January']");
+    protected By januarysShoes = By.cssSelector("div>h2");
+    protected By listOfBrand = By.xpath("//td[text()= 'Brand']");
+    protected By listOfNames = By.xpath("//td[text()= 'Name']");
+    protected By listOfPrices = By.xpath("//td[text()= 'Price']");
+    protected By listOfDescription = By.xpath("//td[text()= 'Description']");
+    protected By listOfReleaseMonth = By.xpath("//td[text()= 'Release Month']");
+    protected By listOfJanuaryLink = By.linkText("January");
 }

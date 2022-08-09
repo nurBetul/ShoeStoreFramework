@@ -3,8 +3,8 @@
 
 <suite name="All Test Suite" >
     <test verbose="2" preserve-order="true" name="/Users/nuryaz/IdeaProjects/ShoeStore">
-        <classes>
-            <class name="Tests.LandingPageTests"/>
-        </classes>
+        <packages>
+            <package name="ShoeStore"></package>
+        </packages>
     </test>
 </suite>

@@ -25,7 +25,7 @@ public class ShoeStoreLanding extends PageBase {
         return (driver.findElement(c.homeLabel)).getText();
     }
 
-    public void getTopBarElements(){
+    public List<WebElement> getTopBarElements(){
         List <WebElement> monthsOnTopBar = su.findElements(c.listOfMonths);
         int count = 0;
         for (WebElement element: monthsOnTopBar) {
@@ -33,6 +33,8 @@ public class ShoeStoreLanding extends PageBase {
             su.highlightElement(element);
         }
         System.out.println("There are " + count + " elements on the top bar");
+
+        return monthsOnTopBar;
     }
 
     public String getRemindMeLabel(){
@@ -68,6 +70,10 @@ public class ShoeStoreLanding extends PageBase {
         su.waitForVisibility(c.promoAlert);
     }
 
+    public String getPromotionalCodeWarning(){
+        return driver.findElement(c.promoCodeWarning).getText();
+    }
+
     public String getWelcomeText(){
         return su.findElement(c.welcomeTitle).getText();
     }
@@ -89,4 +95,8 @@ public class ShoeStoreLanding extends PageBase {
     public void clickSearchButton(){
         su.click(c.searchButton);
     }
-}
+
+    public String getPageTitle(){
+        return su.findElement(c.acornsShoesPage).getText();
+
+    }}
